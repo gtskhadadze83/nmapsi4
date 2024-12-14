@@ -46,8 +46,8 @@ jobs:
       uses: WillBrennan/yaqti@2021.07.27.1
       with:
         version: '6.4.0'
-        host: 'windows'
-        target: 'desktop'
+        os: 'windows'
+        platform: 'desktop'
         modules: 'qtcharts qtwebengine webenginewidgets'
         
     - uses: actions/checkout@v4
