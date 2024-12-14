@@ -43,12 +43,16 @@ jobs:
 
     steps:
     - name: Install Qt5/Qt6 (yaqti)
-      uses: WillBrennan/yaqti
+      uses: WillBrennan/yaqti@2021.07.27.1
       with:
-        version: '6.2.0'
+        version: '6.4.0'
         os: 'windows'
         platform: 'desktop'
-        modules: '"qtcharts webenginequick"'
+        
+
+    - name: qtwebengine
+      run: python -m yaqti install  --version "6.4.0" --os windows --platform desktop --modules qtcharts --modules qtwebengine --set-envs --install-deps
+    
         
     - uses: actions/checkout@v4
 
