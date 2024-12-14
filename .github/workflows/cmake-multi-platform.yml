@@ -43,9 +43,9 @@ jobs:
 
     steps:
     - name: Install Qt5/Qt6 (yaqti)
-      uses: WillBrennan/yaqti@2021.07.29
+      uses: WillBrennan/yaqti
       with:
-        version: '6.7.3'
+        version: '6.2.0'
         os: 'windows'
         platform: 'desktop'
         modules: '"qtcharts webenginequick"'
