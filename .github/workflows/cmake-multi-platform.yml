@@ -49,7 +49,6 @@ jobs:
         os: 'windows'
         platform: 'desktop'
         modules: "qtcharts qtwebengine"
-        install-deps: "true"
         
     - uses: actions/checkout@v4
 
