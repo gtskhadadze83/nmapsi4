@@ -45,10 +45,10 @@ jobs:
     - name: Install Qt5/Qt6 (yaqti)
       uses: WillBrennan/yaqti@2021.07.27.1
       with:
-        version: '6.4.0'
+        version: '6.8.0'
         os: 'windows'
         platform: 'desktop'
-        modules: 'qtcharts qtwebengine webenginewidgets'
+        modules: 'qtcharts qtwebengine'
         
     - uses: actions/checkout@v4
 
